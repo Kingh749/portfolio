@@ -198,7 +198,7 @@ function App() {
                 <div className="timeline-body">
                   <span className="timeline-date">July 2023 – August 2027</span>
                   <h3 className="timeline-title">Charotar University of Science &amp; Technology</h3>
-                  <p className="timeline-sub">B.Tech — Information Technology &nbsp;·&nbsp; CGPA: 6.86 / 10.0</p>
+                  <p className="timeline-sub">B.Tech — Information Technology</p>
                   <p className="timeline-loc">📍 Nadiad, Gujarat, India</p>
                 </div>
               </div>
