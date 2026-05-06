@@ -104,9 +104,10 @@ function App() {
             <a href="#" className="logo">Divya Shah.</a>
             <div className="links">
               <a href="#about">About</a>
-              <a href="#services">Services</a>
-              <a href="#skills">Timeline</a>
-              <a href="#projects">Courses</a>
+              <a href="#experience">Experience</a>
+              <a href="#skills">Skills</a>
+              <a href="#projects">Projects</a>
+              <a href="#certifications">Certifications</a>
               <a href="#contact">Contact</a>
             </div>
             <a href="#contact" className="work-with-me-btn">WORK WITH ME</a>
@@ -184,96 +185,191 @@ function App() {
           </motion.div>
         </section>
 
-        {/* About / Education Section */}
-        <section id="about">
+        {/* ── ABOUT / EDUCATION ── */}
+        <section id="about" className="section-pad">
           <FadeIn>
-            <h2>Education & Journey</h2>
-            <div className="education-timeline">
-              <div className="timeline-item">
-                <span className="timeline-date">July 2023 - August 2027</span>
-                <h3 className="timeline-title">Charotar University of Science & Technology (CHARUSAT)</h3>
-                <p className="timeline-subtitle">Information Technology</p>
-              </div>
-              <div className="timeline-item">
-                <span className="timeline-date">July 2018 - May 2023</span>
-                <h3 className="timeline-title">KNOWLEDGE HIGH SCHOOL</h3>
-                <p className="timeline-subtitle">PCM</p>
-              </div>
-            </div>
+            <p className="section-label">MY BACKGROUND</p>
+            <h2 className="section-heading">Education &amp; Journey</h2>
           </FadeIn>
-        </section>
-
-        {/* Skills Section */}
-        <section id="skills">
-          <FadeIn>
-            <h2>Core Expertise</h2>
-            <div className="skills-grid">
-              <div className="skill-card">
-                <h3><Shield size={24} color="#00ffcc" /> Cybersecurity</h3>
-                <p>Deloitte Cybersecurity Virtual Internship. 1st position in GHOST HUNT EVENT | CYBERKAVACH. Google Cloud Cybersecurity Certification.</p>
-              </div>
-              <div className="skill-card">
-                <h3><Code size={24} color="#00ffcc" /> Full Stack Dev</h3>
-                <p>Next.js, React, Node.js. Experience building complex platforms with AI integrations.</p>
-              </div>
-              <div className="skill-card">
-                <h3><Database size={24} color="#00ffcc" /> Data Engineering</h3>
-                <p>Designing robust data pipelines, data analysis, and scalable architectures.</p>
-              </div>
-              <div className="skill-card">
-                <h3><Brain size={24} color="#00ffcc" /> Machine Learning</h3>
-                <p>IBM Machine Learning Professional Certificate (Coursera). Applied ML in practical projects.</p>
-              </div>
-            </div>
-          </FadeIn>
-        </section>
-
-        {/* Projects Section */}
-        <section id="projects">
-          <FadeIn>
-            <h2>Recent Endeavors</h2>
-            <div className="projects-grid">
-              <div className="project-card">
-                <div className="project-content">
-                  <h3>PropWise (Next.js Group Project)</h3>
-                  <p>A full-stack application with AI integration, showcasing hands-on experience with modern web development and AI-powered services.</p>
-                  <div className="project-tags">
-                    <span className="project-tag">Next.js</span>
-                    <span className="project-tag">AI Integration</span>
-                    <span className="project-tag">Full Stack</span>
-                  </div>
+          <div className="education-timeline">
+            <FadeIn delay={0.1}>
+              <div className="timeline-item glass-card">
+                <div className="timeline-dot" />
+                <div className="timeline-body">
+                  <span className="timeline-date">July 2023 – August 2027</span>
+                  <h3 className="timeline-title">Charotar University of Science &amp; Technology</h3>
+                  <p className="timeline-sub">B.Tech — Information Technology &nbsp;·&nbsp; CGPA: 6.86 / 10.0</p>
+                  <p className="timeline-loc">📍 Nadiad, Gujarat, India</p>
                 </div>
               </div>
-              
-              <div className="project-card">
-                <div className="project-content">
-                  <h3>Cybersecurity Analyst Simulator</h3>
-                  <p>Practical tasks completed during the Deloitte Cybersecurity Virtual Simulation, focusing on real-world cyber threat analysis.</p>
-                  <div className="project-tags">
-                    <span className="project-tag">Cybersecurity</span>
-                    <span className="project-tag">Threat Analysis</span>
-                  </div>
+            </FadeIn>
+            <FadeIn delay={0.2}>
+              <div className="timeline-item glass-card">
+                <div className="timeline-dot" />
+                <div className="timeline-body">
+                  <span className="timeline-date">2018 – 2023</span>
+                  <h3 className="timeline-title">Knowledge High School</h3>
+                  <p className="timeline-sub">PCM — Physics, Chemistry, Mathematics</p>
+                  <p className="timeline-loc">📍 Gujarat, India</p>
                 </div>
               </div>
+            </FadeIn>
+          </div>
+        </section>
+
+        {/* ── EXPERIENCE ── */}
+        <section id="experience" className="section-pad">
+          <FadeIn>
+            <p className="section-label">PROFESSIONAL</p>
+            <h2 className="section-heading">Experience</h2>
+          </FadeIn>
+          <FadeIn delay={0.15}>
+            <div className="exp-card glass-card">
+              <div className="exp-header">
+                <div>
+                  <h3 className="exp-role">Jr. Data Engineer Intern</h3>
+                  <p className="exp-company">Aureus Infotech Canada</p>
+                </div>
+                <div className="exp-meta">
+                  <span className="exp-date">May 2025 – June 2025</span>
+                  <span className="exp-badge">Remote</span>
+                </div>
+              </div>
+              <ul className="exp-list">
+                <li>Designed and developed ETL data pipelines for processing and transforming large-scale datasets, ensuring data quality and consistency across multiple data sources.</li>
+                <li>Assisted in integrating heterogeneous data systems and optimized data workflows for improved performance and scalability, reducing processing time via efficient transformation logic.</li>
+                <li>Collaborated with cross-functional data teams to build reliable data infrastructure supporting data-driven decision-making and analytics initiatives.</li>
+                <li>Maintained data pipeline documentation and implemented monitoring solutions to ensure system reliability and data integrity.</li>
+              </ul>
             </div>
           </FadeIn>
         </section>
 
-        {/* Contact Section */}
-        <section id="contact" className="contact-section">
+        {/* ── SKILLS ── */}
+        <section id="skills" className="section-pad">
           <FadeIn>
-            <h2>Let's Connect</h2>
-            <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
-            <p style={{ color: '#fff', fontSize: '1.2rem', marginTop: '1rem' }}>
-              divyanshah2005@gmail.com <br />
-              +91 9664909373
-            </p>
-            <div className="social-links" style={{ justifyContent: 'center' }}>
-              <a href="https://www.linkedin.com/in/divya-shah-312b09284" target="_blank" rel="noreferrer">
-                <LinkedinIcon size={24} />
+            <p className="section-label">WHAT I KNOW</p>
+            <h2 className="section-heading">Technical Skills</h2>
+          </FadeIn>
+          <div className="skills-categories">
+            {[
+              { icon: <Code size={20} color="#00ffcc" />, label: "Programming Languages", tags: ["Python", "C#", "JavaScript", "SQL", "C++"] },
+              { icon: <Database size={20} color="#00ffcc" />, label: "Data Engineering", tags: ["ETL Pipelines", "Data Integration", "Data Transformation", "Data Quality Management"] },
+              { icon: <Brain size={20} color="#00ffcc" />, label: "Machine Learning", tags: ["Supervised Learning", "Unsupervised Learning", "Model Deployment", "Feature Engineering"] },
+              { icon: <Shield size={20} color="#00ffcc" />, label: "Cybersecurity", tags: ["Network Security", "Threat Analysis", "Security Assessment", "Vulnerability Management"] },
+              { icon: <Code size={20} color="#00ffcc" />, label: "Web Development", tags: ["Full Stack", ".NET Core", "React", "Node.js", "RESTful APIs"] },
+              { icon: <Database size={20} color="#00ffcc" />, label: "Cloud &amp; Tools", tags: ["Google Cloud Platform", "Docker", "Git", "Linux", "Database Management"] },
+              { icon: <Brain size={20} color="#00ffcc" />, label: "Frameworks", tags: ["TensorFlow", "Scikit-learn", "Pandas", "NumPy", ".NET Core"] },
+            ].map((cat, i) => (
+              <FadeIn key={cat.label} delay={i * 0.08}>
+                <div className="skill-category-card glass-card">
+                  <div className="skill-cat-header">{cat.icon}<span>{cat.label}</span></div>
+                  <div className="skill-tags">
+                    {cat.tags.map(t => <span key={t} className="skill-tag">{t}</span>)}
+                  </div>
+                </div>
+              </FadeIn>
+            ))}
+          </div>
+        </section>
+
+        {/* ── PROJECTS ── */}
+        <section id="projects" className="section-pad">
+          <FadeIn>
+            <p className="section-label">WHAT I'VE BUILT</p>
+            <h2 className="section-heading">Projects &amp; Achievements</h2>
+          </FadeIn>
+          <div className="projects-grid">
+            {[
+              {
+                title: "GHOST Hackathon — 🥇 1st Place Winner",
+                badge: "2025 · Team: The Anonymous Group",
+                desc: "Led a team to secure first position in a competitive cybersecurity hackathon. Demonstrated advanced problem-solving in security challenges and collaborative technical development.",
+                tags: ["Cybersecurity", "Hackathon", "Team Lead"],
+                accent: "#00ffcc",
+              },
+              {
+                title: "End-to-End ML Pipeline Development",
+                badge: "Machine Learning",
+                desc: "Built complete ML pipelines from data preprocessing through model deployment using Python and scikit-learn. Implemented feature engineering and model optimization for production-ready solutions.",
+                tags: ["Python", "Scikit-learn", "Model Deployment", "Feature Engineering"],
+                accent: "#a78bfa",
+              },
+              {
+                title: "Full Stack App with .NET Core",
+                badge: "Web Development",
+                desc: "Developed scalable web applications using C# and .NET Core with RESTful API architecture. Integrated frontend and backend systems with secure authentication and database management.",
+                tags: ["C#", ".NET Core", "RESTful API", "Full Stack"],
+                accent: "#38bdf8",
+              },
+            ].map((p, i) => (
+              <FadeIn key={p.title} delay={i * 0.12}>
+                <motion.div
+                  className="project-card glass-card"
+                  whileHover={{ y: -6, boxShadow: `0 20px 60px ${p.accent}22` }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <div className="project-accent-bar" style={{ background: p.accent }} />
+                  <span className="project-badge">{p.badge}</span>
+                  <h3 className="project-title">{p.title}</h3>
+                  <p className="project-desc">{p.desc}</p>
+                  <div className="project-tags">
+                    {p.tags.map(t => <span key={t} className="project-tag">{t}</span>)}
+                  </div>
+                </motion.div>
+              </FadeIn>
+            ))}
+          </div>
+        </section>
+
+        {/* ── CERTIFICATIONS ── */}
+        <section id="certifications" className="section-pad">
+          <FadeIn>
+            <p className="section-label">CREDENTIALS</p>
+            <h2 className="section-heading">Certifications &amp; Training</h2>
+          </FadeIn>
+          <div className="certs-grid">
+            {[
+              { name: "IBM Machine Learning Professional Certificate", org: "Coursera", year: "2025" },
+              { name: "Google Cloud Career Launchpad — Cybersecurity Track", org: "Google Cloud", year: "2025" },
+              { name: "Deloitte Cybersecurity Virtual Internship", org: "Forage", year: "2025" },
+              { name: "Google Introduction to Cybersecurity", org: "Coursera", year: "2025" },
+              { name: "NLP for Generative AI Workshop", org: "CHARUSAT", year: "2025" },
+              { name: "Building Applications with C# and .NET Core", org: "CHARUSAT DEPSTAR", year: "2025" },
+              { name: "What Is Generative AI?", org: "LinkedIn Learning", year: "2025" },
+            ].map((c, i) => (
+              <FadeIn key={c.name} delay={i * 0.07}>
+                <motion.div
+                  className="cert-card glass-card"
+                  whileHover={{ scale: 1.03 }}
+                  transition={{ duration: 0.25 }}
+                >
+                  <div className="cert-icon">🏅</div>
+                  <div className="cert-body">
+                    <p className="cert-name">{c.name}</p>
+                    <p className="cert-org">{c.org} · {c.year}</p>
+                  </div>
+                </motion.div>
+              </FadeIn>
+            ))}
+          </div>
+        </section>
+
+        {/* ── CONTACT ── */}
+        <section id="contact" className="section-pad contact-section">
+          <FadeIn>
+            <p className="section-label">GET IN TOUCH</p>
+            <h2 className="section-heading">Let's Connect</h2>
+            <p className="contact-sub">Open to internships, collaborations, and innovative projects.</p>
+            <div className="contact-pills">
+              <a href="mailto:divyanshah2005@gmail.com" className="contact-pill">
+                <Mail size={18} /> divyanshah2005@gmail.com
               </a>
-              <a href="mailto:divyanshah2005@gmail.com">
-                <Mail size={24} />
+              <a href="https://www.linkedin.com/in/divya-shah-312b09284" target="_blank" rel="noreferrer" className="contact-pill">
+                <LinkedinIcon size={18} /> linkedin.com/in/divya-shah
+              </a>
+              <a href="https://github.com/Kingh749" target="_blank" rel="noreferrer" className="contact-pill">
+                <GithubIcon size={18} /> github.com/Kingh749
               </a>
             </div>
           </FadeIn>

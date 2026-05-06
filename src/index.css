@@ -453,3 +453,111 @@ p {
   h1 { font-size: 3rem; }
   .links { display: none; }
 }
+
+/* ── SHARED SECTION STYLES ── */
+.section-pad { min-height: auto; padding: 100px 6%; }
+.section-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.25em;
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+  text-transform: uppercase;
+}
+.section-heading {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 3rem;
+  line-height: 1.15;
+}
+.glass-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  transition: border-color 0.3s ease;
+}
+.glass-card:hover { border-color: rgba(0,255,204,0.2); }
+
+/* ── EDUCATION TIMELINE ── */
+.education-timeline { display: flex; flex-direction: column; gap: 1.5rem; max-width: 800px; }
+.timeline-item { display: flex; gap: 1.5rem; align-items: flex-start; padding: 1.8rem 2rem; }
+.timeline-dot {
+  width: 12px; height: 12px; border-radius: 50%;
+  background: var(--primary); flex-shrink: 0; margin-top: 6px;
+  box-shadow: 0 0 12px var(--primary);
+}
+.timeline-body { display: flex; flex-direction: column; gap: 0.4rem; }
+.timeline-date { font-size: 0.78rem; color: var(--primary); letter-spacing: 0.08em; font-weight: 500; }
+.timeline-title { font-size: 1.15rem; font-weight: 700; color: #fff; }
+.timeline-sub { font-size: 0.9rem; color: #ccc; }
+.timeline-loc { font-size: 0.82rem; color: var(--text-muted); margin-top: 0.2rem; }
+
+/* ── EXPERIENCE ── */
+.exp-card { padding: 2.2rem 2.5rem; max-width: 900px; }
+.exp-header { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem; }
+.exp-role { font-size: 1.35rem; font-weight: 700; color: #fff; }
+.exp-company { font-size: 1rem; color: var(--primary); margin-top: 0.3rem; }
+.exp-meta { display: flex; flex-direction: column; align-items: flex-end; gap: 0.5rem; }
+.exp-date { font-size: 0.82rem; color: var(--text-muted); }
+.exp-badge {
+  font-size: 0.72rem; padding: 0.2rem 0.8rem; border-radius: 50px;
+  border: 1px solid var(--primary); color: var(--primary); font-weight: 600; letter-spacing: 0.08em;
+}
+.exp-list { padding-left: 1.2rem; display: flex; flex-direction: column; gap: 0.8rem; }
+.exp-list li { font-size: 0.93rem; color: #bbb; line-height: 1.7; }
+
+/* ── SKILLS ── */
+.skills-categories { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.2rem; }
+.skill-category-card { padding: 1.5rem 1.8rem; }
+.skill-cat-header { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 1rem; font-size: 0.9rem; font-weight: 600; color: #e0e0e0; }
+.skill-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.skill-tag {
+  font-size: 0.75rem; padding: 0.3rem 0.8rem; border-radius: 50px;
+  background: rgba(0,255,204,0.08); border: 1px solid rgba(0,255,204,0.2);
+  color: var(--primary); font-weight: 500;
+  transition: background 0.2s;
+}
+.skill-tag:hover { background: rgba(0,255,204,0.18); }
+
+/* ── PROJECTS ── */
+.project-accent-bar { height: 3px; border-radius: 2px; margin-bottom: 1.2rem; }
+.project-badge { font-size: 0.72rem; color: var(--text-muted); letter-spacing: 0.06em; display: block; margin-bottom: 0.6rem; }
+.project-title { font-size: 1.15rem; font-weight: 700; color: #fff; margin-bottom: 0.8rem; }
+.project-desc { font-size: 0.9rem; color: #aaa; line-height: 1.7; margin-bottom: 1.2rem; }
+.project-card { padding: 2rem; }
+
+/* ── CERTIFICATIONS ── */
+.certs-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1rem; }
+.cert-card { display: flex; align-items: center; gap: 1rem; padding: 1.3rem 1.5rem; cursor: default; }
+.cert-icon { font-size: 1.5rem; flex-shrink: 0; }
+.cert-name { font-size: 0.9rem; font-weight: 600; color: #e0e0e0; line-height: 1.4; margin-bottom: 0.3rem; }
+.cert-org { font-size: 0.78rem; color: var(--primary); }
+
+/* ── CONTACT PILLS ── */
+.contact-sub { font-size: 1rem; color: #aaa; margin-bottom: 2rem; max-width: 500px; }
+.contact-pills { display: flex; flex-wrap: wrap; gap: 1rem; }
+.contact-pill {
+  display: flex; align-items: center; gap: 0.6rem;
+  padding: 0.8rem 1.6rem; border-radius: 50px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.04);
+  color: #ddd; font-size: 0.9rem; text-decoration: none;
+  transition: all 0.3s ease; backdrop-filter: blur(8px);
+}
+.contact-pill:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  background: rgba(0,255,204,0.08);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .exp-header { flex-direction: column; }
+  .exp-meta { align-items: flex-start; }
+  .skills-categories { grid-template-columns: 1fr; }
+  .certs-grid { grid-template-columns: 1fr; }
+  .contact-pills { flex-direction: column; }
+}
