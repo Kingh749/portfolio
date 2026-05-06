@@ -199,7 +199,7 @@ function App() {
                   <span className="timeline-date">July 2023 – August 2027</span>
                   <h3 className="timeline-title">Charotar University of Science &amp; Technology</h3>
                   <p className="timeline-sub">B.Tech — Information Technology</p>
-                  <p className="timeline-loc">📍 Nadiad, Gujarat, India</p>
+                  <p className="timeline-loc">📍 Gujarat, India</p>
                 </div>
               </div>
             </FadeIn>
