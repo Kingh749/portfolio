@@ -123,7 +123,7 @@ function App() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 2, ease: "easeOut" }}
           >
-            <img src="/front-video.webp" alt="" className="hero-fullscreen-img hero-img-dark" />
+            <img src="https://res.cloudinary.com/dgxttqijt/image/upload/v1778044436/front-video_c7ko6d.webp" alt="" className="hero-fullscreen-img hero-img-dark" />
           </motion.div>
 
           {/* Gradient vignette */}
@@ -149,7 +149,7 @@ function App() {
             transition={{ duration: 1.4, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
             style={{ x: mouseX, y: mouseY }}
           >
-            <img src="/front-video.webp" alt="Divya Shah" className="hero-portrait-img" />
+            <img src="https://res.cloudinary.com/dgxttqijt/image/upload/v1778044436/front-video_c7ko6d.webp" alt="Divya Shah" className="hero-portrait-img" />
           </motion.div>
 
           {/* LAYER 4: Bottom tagline */}
