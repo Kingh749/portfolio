@@ -124,12 +124,14 @@ function App() {
             transition={{ duration: 2, ease: "easeOut" }}
           >
             <video
-              src="https://res.cloudinary.com/dgxttqijt/video/upload/v1778046338/final_ashinh.mp4"
+              src="https://res.cloudinary.com/dgxttqijt/video/upload/q_60,w_1280,vc_auto/v1778046338/final_ashinh.mp4"
+              poster="https://res.cloudinary.com/dgxttqijt/image/upload/v1778044436/front-video_c7ko6d.webp"
               className="hero-fullscreen-img hero-img-dark"
               autoPlay
               loop
               muted
               playsInline
+              preload="auto"
             />
           </motion.div>
 
@@ -156,13 +158,10 @@ function App() {
             transition={{ duration: 1.4, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
             style={{ x: mouseX, y: mouseY }}
           >
-            <video
-              src="https://res.cloudinary.com/dgxttqijt/video/upload/v1778046338/final_ashinh.mp4"
+            <img
+              src="https://res.cloudinary.com/dgxttqijt/image/upload/v1778044436/front-video_c7ko6d.webp"
+              alt="Divya Shah"
               className="hero-portrait-img"
-              autoPlay
-              loop
-              muted
-              playsInline
             />
           </motion.div>
 
